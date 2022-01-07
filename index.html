@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Neumorphism Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/422c5fb823.js" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <div class="calc">
+        <div class="title">
+            <i class="fas fa-calculator"></i>
+            <img src="images/oj3.jpeg" alt="Logo">
+        </div>
+
+        <input type="text" placeholder="012345" class="display" readonly>
+
+        <div class="button" onclick="insert(1)" onmousedown="bleep.play ()">1</div>
+        <div class="button" onclick="insert(2)" onmousedown="bleep.play ()">2</div>
+        <div class="button" onclick="insert(3)" onmousedown="bleep.play ()">3</div>
+
+        <div class="button plus"  onclick="insert('+')" onmousedown="bleep.play ()">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <div class="button" onclick="insert(4)" onmousedown="bleep.play ()">4</div>
+        <div class="button" onclick="insert(5)" onmousedown="bleep.play ()">5</div>
+        <div class="button" onclick="insert(6)" onmousedown="bleep.play ()">6</div>
+
+        <div class="button minus" onclick="insert('-')" onmousedown="bleep.play ()">
+            <i class="fas fa-minus"></i>
+        </div>
+
+        <div class="button" onclick="insert(7)" onmousedown="bleep.play ()">7</div>
+        <div class="button" onclick="insert(8)" onmousedown="bleep.play ()">8</div>
+        <div class="button" onclick="insert(9)" onmousedown="bleep.play ()">9</div>
+
+        <div class="button multi" onclick="insert('*')" onmousedown="bleep.play ()">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="button" onclick="insert('.')" onmousedown="bleep.play ()">.</div>
+        <div class="button" onclick="insert(0)" onmousedown="bleep.play ()">0</div>
+
+        <div class="button equals" onclick="calc()"onmousedown="bleep2.play ()" >
+            <i class="fas fa-equals"></i>
+        </div>
+
+        <div class="button divide" onclick="insert('/')" onmousedown="bleep.play ()">
+            <i class="fas fa-divide"></i>
+        </div>
+
+        <div class="button" onclick="sqr()" onmousedown="bleep.play ()"><span>x<sup>2</sup></span></div>
+        <div class="button" onclick="qube()" onmousedown="bleep.play ()"><span>x<sup>3</sup></div>
+
+        <div class="button backspace" onclick="back()" onmousedown="bleep.play ()">
+            <i class="fas fa-backspace"></i>
+        </div>
+
+        <div class="button clear" onclick="clr()" onmousedown="bleep.play ()">
+            C
+        </div>
+    </div>
+
+    <h1>Created by 
+        <span>
+            <i>Lumicode</i>
+        </span>
+
+        <img class="logo-image" src="images/oj6.jpeg" alt="Logo">
+    </h1>
+
+    <script src="main.js"></script>
+    <!-- <script>
+        var display = document.querySelector('.display');
+        function insert(n){
+            display.value += n;
+        }
+
+        function calc() {
+            display.value = eval(display.value);
+        }
+
+        function clr() {
+            display.value = "";
+        }
+
+        function sqr() {
+            display.value = Math.pow(display.value, 2);
+        }
+
+        function qube() {
+            display.value = Math.pow(display.value, 3);
+        }
+
+        function back() {
+            display.value = display.value.substr(0,display.value.length-1);
+        }
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.calc{
+    display: grid;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.9),
+    3px 3px 7px rgba(0, 0, 0, 0.16);
+    grid-template-columns: repeat(4, 50px);
+    gap: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    user-select: none;
+}
+
+.title{
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+img{
+    width: 50px;
+}
+
+.display{
+    grid-column: 1/5;
+    border: 0;
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.9),
+    inset 3px 3px 7px rgba(0, 0, 0, 0.16);
+    border-radius: 22px;
+    font-size: 22px;
+    padding:8px 16px;
+    text-align: right;
+    background-color: transparent;
+    outline:none;
+}
+
+.button{
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.9),
+    3px 3px 7px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.8),
+    inset 3px 3px 7px rgba(0, 0, 0, 0.16);
+}
+
+.plus, .minus, .multi, .divide {
+    background-color: orange;
+    color: white;
+}
+
+.equals{
+    background-color: seagreen;
+    color: white;
+}
+
+.backspace{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.clear{
+    background-color: tomato;
+    color: white;
+}
+
+/* footer */
+h1{
+    box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.8),
+    inset 15px 13px 7px rgba(0, 0, 0, 0.16);
+    width: 378px;
+    padding: 0 0 5px 12px;
+}
+span{
+    background: #000;
+    color: #fff;
+    border-radius: 20%;
+}
+.logo-image{
+    width: 50px;
+    position: relative;
+    top: 12px;
+    left: 10px;
+}    
+.logo-image:hover{
+    width: 100px;
+    transition: 2s ease-in ;
+}
+h1:hover{
+    width: 420px;
+    transition: 2s ease-in ;
+}
