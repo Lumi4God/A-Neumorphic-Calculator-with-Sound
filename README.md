@@ -1,5 +1,5 @@
 # A-Neumorphic-Calculator-with-Sound
-## The New CSS style called Neumorphism started being popular in 2020 and i decided to use it in this Project,
+## The New CSS style called Neumorphism started being popular in 2020 and i decided to use it in this Project (My First JS Project),
 ## there are many calculator projects out there but this design i can tell you is not just one of the best BUT THE BEST
 ## With a sound on each buttons it easy for all to use.
 ## Click this link to view it on the browser
